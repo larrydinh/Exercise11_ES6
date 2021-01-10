@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.result--titletag{
+    color: #ffffff;
+}
+.result--table {
+background-color: #343a40;
+}
+.ResultTable{
+    border: none;
+}

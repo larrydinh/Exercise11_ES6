@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <h2 class="text-center">Thông tin nhân viên</h2>
+    <div class="row">
+      <form class="col-6 form-input">
+        <div class="input-group mb-3">
+          <span class="input-group-text bg-success text-light" id="basic-addon1"
+            >Mã NV</span
+          >
+          <input
+            id="employeeID"
+            type="text"
+            class="form-control"
+            placeholder="Employee ID"
+            aria-label="EmployeeID"
+            aria-describedby="basic-addon1"
+            title="Mã nhân viên"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text bg-success text-light" id="basic-addon1"
+            >Tên NV</span
+          >
+          <input
+            id="name"
+            type="text"
+            class="form-control"
+            placeholder="Employee's Name"
+            aria-label="EmployeeName"
+            aria-describedby="basic-addon1"
+            title="Tên nhân viên"
+          />
+        </div>
+        <!-- input with dropdown  -->
+        <div class="input-group mb-3">
+          <label
+            class="input-group-text bg-success text-light"
+            for="inputGroupSelect01"
+            >Chức vụ</label
+          >
+
+          <select class="form-select form-select-lg" id="inputGroupSelect01">
+            <option class="" selected>Chức vụ</option>
+            <option value="1">Thường</option>
+            <option value="2">Quản lý</option>
+            <option value="3">Giám đốc</option>
+          </select>
+        </div>
+        <!-- ----- -->
+        <!-- <div class="input-group mb-3">
+          <span class="input-group-text bg-success text-light" id="basic-addon1"
+            >HS Lương</span
+          >
+          <input
+            id="salaryCoeff"
+            type="text"
+            class="form-control"
+            placeholder="Salary Coefficient"
+            aria-label="Salary Coefficient"
+            aria-describedby="basic-addon1"
+            title="Hệ số lương"
+          />
+        </div> -->
+        <div class="input-group mb-3">
+          <span class="input-group-text bg-success text-light" id="basic-addon1"
+            >Lương CB</span
+          >
+          <input
+            id="standardSalary"
+            type="text"
+            class="form-control"
+            placeholder="Standard Salary"
+            aria-label="Standard Salary"
+            aria-describedby="basic-addon1"
+            title="Lương cơ bản"
+          />
+        </div>
+        <div class="form-group text-center">
+          <button class="btn btn-danger" id="btnTinhLuong">Tính lương</button>
+        </div>
+      </form>
+      <!-- ------- result table -----  -->
+      <form class="col-6 form-input result--table">
+        <h3 class="text-center result--titletag">Thông tin nhân viên</h3>
+  <span class="text-warning">Mã nhân viên:</span> <span class="text-warning" id="maNV"></span><br>
+  <span class="text-warning">Tên nhân viên:</span> <span class="text-warning" id="tenNV"></span><br>
+  <span class="text-warning">Chức vụ:</span> <span class="text-warning" id="chucVu"></span><br>
+  <span class="text-warning">Tổng lương:</span> <span class="text-warning" id="tongLuong"></span><br>
+
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- my script  -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
